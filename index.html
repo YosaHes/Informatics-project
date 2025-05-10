@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة المنصات - مشروع حاسوب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            direction: rtl;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f0f0f0;
+        }
+
+        .platform-list {
+            max-width: 800px;
+            margin: 2rem auto;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .platform-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid #f5f5f5;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .platform-item:last-child {
+            border-bottom: none;
+        }
+
+        .platform-item:hover {
+            background: #f9f9f9;
+            transform: translateX(-10px);
+        }
+
+        .platform-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .platform-icon {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .platform-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        body.dark-mode {
+            background-color: #1e272e;
+            color: white;
+        }
+
+        body.dark-mode header,
+        body.dark-mode footer {
+            background-color: #2f3640;
+            color: white;
+        }
+
+        body.dark-mode .platform-item {
+            background: #2c3e50;
+            color: white;
+            border-color: #34495e;
+        }
+
+        body.dark-mode .platform-item:hover {
+            background: #34495e;
+        }
+
+        @media (max-width: 768px) {
+            .platform-item {
+                padding: 0.8rem;
+            }
+
+            .platform-name {
+                font-size: 1rem;
+            }
+
+            .platform-icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>قائمة المنصات الاجتماعية</h1>
+        <button id="dark-btn" type="button"><i class="fas fa-moon"></i> الوضع الليلي</button>
+    </header>
+
+    <main>
+        <div class="platform-list">
+            <a href="instagram.html" class="platform-item">
+                <span class="platform-info">
+                    <img src="images/logos/instagram.png" class="platform-icon" alt="إنستغرام">
+                    <span class="platform-name">إنستغرام</span>
+                </span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <a href="twitter.html" class="platform-item">
+                <span class="platform-info">
+                    <img src="images/logos/twitter.png" class="platform-icon" alt="تويتر">
+                    <span class="platform-name">تويتر (𝕏)</span>
+                </span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <a href="snapchat.html" class="platform-item">
+                <span class="platform-info">
+                    <img src="images/logos/snapchat.png" class="platform-icon" alt="سناب شات">
+                    <span class="platform-name">سناب شات</span>
+                </span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <a href="tiktok.html" class="platform-item">
+                <span class="platform-info">
+                    <img src="images/logos/tiktok.png" class="platform-icon" alt="تيك توك">
+                    <span class="platform-name">تيك توك</span>
+                </span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <a href="youtube.html" class="platform-item">
+                <span class="platform-info">
+                    <img src="images/logos/youtube.png" class="platform-icon" alt="يوتيوب">
+                    <span class="platform-name">يوتيوب</span>
+                </span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>تم التصميم بواسطة: حساس يوسف+سعدون إياد  2025</p>
+    </footer>
+
+    <script>
+        document.getElementById("dark-btn").addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تيك توك - تفاصيل كاملة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #FF0050;
+            --bg-color: #ffffff;
+            --text-color: #2d3436;
+            --card-bg: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode {
+            --bg-color: #0f0f0f;
+            --text-color: #ecf0f1;
+            --card-bg: #1e1e1e;
+            --border-color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .back-btn {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        #dark-btn {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .platform-logo {
+            display: block;
+            max-width: 100px;
+            margin: 0 auto 1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            transition: background 0.3s, border 0.3s;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .features-list, .features-list li {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+
+        .features-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .screenshot {
+            width: 100%;
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat-item {
+            background-color: var(--bg-color);
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            margin-top: 0;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .back-btn, #dark-btn {
+                font-size: 1rem;
+                top: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> الرجوع</a>
+        <h1>تيك توك</h1>
+        <button id="dark-btn"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <main class="container">
+        <img src="images/logos/tiktok.png" class="platform-logo" alt="شعار تيك توك" loading="lazy">
+
+        <div class="card">
+            <h2>📅 معلومات التأسيس</h2>
+            <p>تاريخ التأسيس: سبتمبر 2016</p>
+            <p>المطور: بايت دانس</p>
+            <p>المقر الرئيسي: بكين، الصين</p>
+            <img src="images/screenshots/tiktok_ui.jpg" class="screenshot" alt="واجهة تيك توك" loading="lazy">
+        </div>
+
+        <div class="card">
+            <h2>✅ المميزات الرئيسية</h2>
+            <ul class="features-list">
+                <li><i class="fas fa-music"></i> فيديوهات قصيرة مع موسيقى</li>
+                <li><i class="fas fa-brain"></i> خوارزمية ذكية</li>
+                <li><i class="fas fa-plus"></i> أدوات تحرير متقدمة</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>❌ التحديات والعيوب</h2>
+            <ul class="features-list">
+                <li><i class="fas fa-lock"></i> مخاوف أمنية</li>
+                <li><i class="fas fa-clock"></i> إدمان المحتوى</li>
+                <li><i class="fas fa-ban"></i> حظر في بعض الدول</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📊 الإحصائيات الرئيسية</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>👥 المستخدمون النشطون</h3>
+                    <p>1.6 مليار</p>
+                </div>
+                <div class="stat-item">
+                    <h3>⏱ وقت الاستخدام اليومي</h3>
+                    <p>95 دقيقة/مستخدم</p>
+                </div>
+                <div class="stat-item">
+                    <h3>💵 القيمة السوقية</h3>
+                    <p>200 مليار دولار</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const btn = document.getElementById("dark-btn");
+        const icon = btn.querySelector("i");
+
+        btn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                icon.classList.replace("fa-moon", "fa-sun");
+            } else {
+                icon.classList.replace("fa-sun", "fa-moon");
+            }
+        });
+    </script>
+</body>
+</html>
